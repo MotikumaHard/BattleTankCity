@@ -8,7 +8,7 @@ public class bakuhatu : MonoBehaviour {
         Instantiate(exprotion, transform.position, transform.rotation);
     }
     void OnAnimationFinish()
-    {        
+    {
         Destroy(gameObject);
     }
     

@@ -4,6 +4,9 @@ using System.Collections;
 public class bullet : MonoBehaviour {
     public float speeds = 0.01f;
     public GameObject bakuha;
+    public GameObject seHit;
+    public GameObject seInjection;
+    public GameObject seBrock;
     public AudioClip audioClip;
     AudioSource audioSource;
     public int attack;
@@ -14,8 +17,9 @@ public class bullet : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = transform.up.normalized * speeds;
             audioSource = gameObject.GetComponent<AudioSource>();
             audioSource.clip = audioClip;
+            Instantiate(seInjection, transform.position, transform.rotation);
         }
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 1);
     }
 	
 	// Update is called once per frame
@@ -26,15 +30,17 @@ public class bullet : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D c)
     {
-        audioSource.Play();//爆発音の再生
         if (c.tag == "Player1"|| c.tag == "Player2"|| c.tag == "Player3"|| c.tag == "Player4")
         {
             c.gameObject.GetComponent<Tank>().DmageHp(attack*4);
+            Instantiate(seHit, transform.position, transform.rotation);
         }
         else if(c.tag == "block")
         {
             Destroy(c.gameObject);
-        }else { }
+            Instantiate(seBrock, transform.position, transform.rotation);
+        }
+        else if(c.tag == "Unbreakable block") { Instantiate(seBrock, transform.position, transform.rotation); }
         //Destroy(c.gameObject);//自身の削除
         Instantiate(bakuha, transform.position, transform.rotation);//爆発アニメーションの再生
         Destroy(gameObject);//自身の削除

@@ -40,7 +40,7 @@ public class bullet : MonoBehaviour {
             Destroy(c.gameObject);
             Instantiate(seBrock, transform.position, transform.rotation);
         }
-        else if(c.tag == "Unbreakable block") { Instantiate(seBrock, transform.position, transform.rotation); }
+        else if(c.tag == "Unbreakable block") { Instantiate(seBrock, transform.position, transform.rotation);}
         //Destroy(c.gameObject);//自身の削除
         Instantiate(bakuha, transform.position, transform.rotation);//爆発アニメーションの再生
         Destroy(gameObject);//自身の削除

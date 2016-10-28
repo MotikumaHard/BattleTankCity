@@ -13,7 +13,9 @@ public class CharaSelectSystem : MonoBehaviour {
 	public int MaxTanknum = 4;
 	bool slant = false;
 	public string tankname = "";
+    public string charaname = "";
 	public TankMasterTable tanktable;
+    public CharaMasterTable charatable;
 	public GamePadManager pad;
     public GameObject Completed;
 	CharaSelectManager manager;
@@ -53,6 +55,8 @@ public class CharaSelectSystem : MonoBehaviour {
 		tanktable = new TankMasterTable();
 		tanktable.Load();
 
+        charatable = new CharaMasterTable();
+        charatable.Load();
 	}
 	
 	// Update is called once per frame

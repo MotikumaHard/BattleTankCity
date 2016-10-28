@@ -38,7 +38,7 @@ public class Tank : MonoBehaviour
 
         pearent = gameObject.transform.parent.gameObject.GetComponent<TankManager>();
 
-        spd = pearent.TankSpeed / 3;  
+        spd = pearent.TankSpeed;  
     }
 
     // Update is called once per frame
@@ -69,7 +69,7 @@ public class Tank : MonoBehaviour
         if (TankYatu.IsPlay)
         {
             //向きの値に入力値を足す
-            angl += ((stickx) * (pearent.TankTurning / 3.0f));
+            angl += ((stickx) * (pearent.TankTurning));
             
 
             //戦車前進

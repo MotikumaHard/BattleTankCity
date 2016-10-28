@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CharaMasterTable : MasterTableBase<CharaMaster>
 {
-    private static readonly string FilePath = "Tank";
+    private static readonly string FilePath = "Chara";
     public void Load() { Load(FilePath); }
 }
 

@@ -9,17 +9,26 @@ public class BarTurning : MonoBehaviour {
 	Slider slider;
 	float nownum = 0;
 	float innum = 0;
-	// Use this for initialization
-	void Start () {
+    bool Ischara = false;
+    // Use this for initialization
+    void Start () {
 		GameObject parent = gameObject.transform.parent.parent.gameObject;
 		system = parent.GetComponent<CharaSelectSystem>();
 		slider = this.GetComponent<Slider>();
-	}
+
+        if (this.gameObject.tag == "Player")
+        {
+            Ischara = true;
+        }
+    }
 
 	// Update is called once per frame
 	void Update () {
-		innum = system.tanktable.All[system.tanknum].Turning;
-		innum = innum/5;
+        if (Ischara)
+        { innum = system.charatable.All[system.charanum].Turning; }
+        else
+        { innum = system.tanktable.All[system.tanknum].Turning; }
+        innum = innum/5;
 
 		if(nownum != innum)
 		{

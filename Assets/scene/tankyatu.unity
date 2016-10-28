@@ -770,25 +770,31 @@ Prefab:
         type: 2}
       propertyPath: Tank.Array.data[2]
       value: 
-      objectReference: {fileID: 1000010867853252, guid: be5f7035121debc42867e01ee3eeb0b5,
+      objectReference: {fileID: 1000013503161950, guid: 8cc0b249b10116d41b32d51ad0565826,
         type: 2}
     - target: {fileID: 114000011336415970, guid: 52c9ab588e5620b419c66b51b0fbc596,
         type: 2}
       propertyPath: Tank.Array.data[1]
       value: 
-      objectReference: {fileID: 1000011298284474, guid: 2e932e80ced94cf44a03d0270971d775,
+      objectReference: {fileID: 1000010966269782, guid: 76002be63806c5c48b5def96d5bb1cad,
         type: 2}
     - target: {fileID: 114000011336415970, guid: 52c9ab588e5620b419c66b51b0fbc596,
         type: 2}
       propertyPath: Tank.Array.data[3]
       value: 
-      objectReference: {fileID: 1000012023659572, guid: 646aa99a8142ac847b4f050f601f8769,
+      objectReference: {fileID: 1000014188822022, guid: 77a0c91cab7d78042b8cdbd747c88ad8,
         type: 2}
     - target: {fileID: 114000011336415970, guid: 52c9ab588e5620b419c66b51b0fbc596,
         type: 2}
       propertyPath: seDeath
       value: 
       objectReference: {fileID: 1000012726541168, guid: 59bad7c76704a964cb650bc54935f3f5,
+        type: 2}
+    - target: {fileID: 114000011336415970, guid: 52c9ab588e5620b419c66b51b0fbc596,
+        type: 2}
+      propertyPath: Tank.Array.data[0]
+      value: 
+      objectReference: {fileID: 1000010934257566, guid: dd39864784dc06745a0ca4176aa94dfe,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52c9ab588e5620b419c66b51b0fbc596, type: 2}
@@ -3866,25 +3872,31 @@ Prefab:
         type: 2}
       propertyPath: Tank.Array.data[2]
       value: 
-      objectReference: {fileID: 1000010867853252, guid: be5f7035121debc42867e01ee3eeb0b5,
+      objectReference: {fileID: 1000013503161950, guid: 8cc0b249b10116d41b32d51ad0565826,
         type: 2}
     - target: {fileID: 114000013027696344, guid: 37247bb3cb17f014f81ac444a4296cb9,
         type: 2}
       propertyPath: Tank.Array.data[1]
       value: 
-      objectReference: {fileID: 1000011298284474, guid: 2e932e80ced94cf44a03d0270971d775,
+      objectReference: {fileID: 1000010966269782, guid: 76002be63806c5c48b5def96d5bb1cad,
         type: 2}
     - target: {fileID: 114000013027696344, guid: 37247bb3cb17f014f81ac444a4296cb9,
         type: 2}
       propertyPath: Tank.Array.data[3]
       value: 
-      objectReference: {fileID: 1000012023659572, guid: 646aa99a8142ac847b4f050f601f8769,
+      objectReference: {fileID: 1000014188822022, guid: 77a0c91cab7d78042b8cdbd747c88ad8,
         type: 2}
     - target: {fileID: 114000013027696344, guid: 37247bb3cb17f014f81ac444a4296cb9,
         type: 2}
       propertyPath: seDeath
       value: 
       objectReference: {fileID: 1000012726541168, guid: 59bad7c76704a964cb650bc54935f3f5,
+        type: 2}
+    - target: {fileID: 114000013027696344, guid: 37247bb3cb17f014f81ac444a4296cb9,
+        type: 2}
+      propertyPath: Tank.Array.data[0]
+      value: 
+      objectReference: {fileID: 1000010934257566, guid: dd39864784dc06745a0ca4176aa94dfe,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37247bb3cb17f014f81ac444a4296cb9, type: 2}
@@ -6471,25 +6483,31 @@ Prefab:
         type: 2}
       propertyPath: Tank.Array.data[2]
       value: 
-      objectReference: {fileID: 1000010867853252, guid: be5f7035121debc42867e01ee3eeb0b5,
+      objectReference: {fileID: 1000013503161950, guid: 8cc0b249b10116d41b32d51ad0565826,
         type: 2}
     - target: {fileID: 114000013434604176, guid: ef64ac0fdedabff408f6cf89a034e93a,
         type: 2}
       propertyPath: Tank.Array.data[1]
       value: 
-      objectReference: {fileID: 1000011298284474, guid: 2e932e80ced94cf44a03d0270971d775,
+      objectReference: {fileID: 1000010966269782, guid: 76002be63806c5c48b5def96d5bb1cad,
         type: 2}
     - target: {fileID: 114000013434604176, guid: ef64ac0fdedabff408f6cf89a034e93a,
         type: 2}
       propertyPath: Tank.Array.data[3]
       value: 
-      objectReference: {fileID: 1000012023659572, guid: 646aa99a8142ac847b4f050f601f8769,
+      objectReference: {fileID: 1000014188822022, guid: 77a0c91cab7d78042b8cdbd747c88ad8,
         type: 2}
     - target: {fileID: 114000013434604176, guid: ef64ac0fdedabff408f6cf89a034e93a,
         type: 2}
       propertyPath: seDeath
       value: 
       objectReference: {fileID: 1000012726541168, guid: 59bad7c76704a964cb650bc54935f3f5,
+        type: 2}
+    - target: {fileID: 114000013434604176, guid: ef64ac0fdedabff408f6cf89a034e93a,
+        type: 2}
+      propertyPath: Tank.Array.data[0]
+      value: 
+      objectReference: {fileID: 1000010934257566, guid: dd39864784dc06745a0ca4176aa94dfe,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef64ac0fdedabff408f6cf89a034e93a, type: 2}
@@ -6681,25 +6699,31 @@ Prefab:
         type: 2}
       propertyPath: Tank.Array.data[2]
       value: 
-      objectReference: {fileID: 1000010867853252, guid: be5f7035121debc42867e01ee3eeb0b5,
+      objectReference: {fileID: 1000013503161950, guid: 8cc0b249b10116d41b32d51ad0565826,
         type: 2}
     - target: {fileID: 114000010663789824, guid: d5e7d8ff5b9c4c64080f6f6240f6e421,
         type: 2}
       propertyPath: Tank.Array.data[1]
       value: 
-      objectReference: {fileID: 1000011298284474, guid: 2e932e80ced94cf44a03d0270971d775,
+      objectReference: {fileID: 1000010966269782, guid: 76002be63806c5c48b5def96d5bb1cad,
         type: 2}
     - target: {fileID: 114000010663789824, guid: d5e7d8ff5b9c4c64080f6f6240f6e421,
         type: 2}
       propertyPath: Tank.Array.data[3]
       value: 
-      objectReference: {fileID: 1000012023659572, guid: 646aa99a8142ac847b4f050f601f8769,
+      objectReference: {fileID: 1000014188822022, guid: 77a0c91cab7d78042b8cdbd747c88ad8,
         type: 2}
     - target: {fileID: 114000010663789824, guid: d5e7d8ff5b9c4c64080f6f6240f6e421,
         type: 2}
       propertyPath: seDeath
       value: 
       objectReference: {fileID: 1000012726541168, guid: 59bad7c76704a964cb650bc54935f3f5,
+        type: 2}
+    - target: {fileID: 114000010663789824, guid: d5e7d8ff5b9c4c64080f6f6240f6e421,
+        type: 2}
+      propertyPath: Tank.Array.data[0]
+      value: 
+      objectReference: {fileID: 1000010934257566, guid: dd39864784dc06745a0ca4176aa94dfe,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5e7d8ff5b9c4c64080f6f6240f6e421, type: 2}

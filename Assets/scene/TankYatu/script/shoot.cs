@@ -4,6 +4,7 @@ using System.Collections;
 public class shoot : MonoBehaviour {
 
     public GameObject bullet;
+    public GameObject mine;
     public float utuwait;
     private bool utu= true;
     public KeyCode shootkye;
@@ -12,6 +13,7 @@ public class shoot : MonoBehaviour {
     float turning;
     TankManager manager;
     TankYatuManager TankYatu;
+    bool IsMine = true;
 
     // Use this for initialization
     void Start()
@@ -45,6 +47,11 @@ public class shoot : MonoBehaviour {
                         StartCoroutine("sleep");
 
                     }
+                }
+                if(tank.B && IsMine)
+                {
+                    var obj = (GameObject)Instantiate(mine, transform.position, transform.rotation);
+                    IsMine = false;
                 }
             }
         }

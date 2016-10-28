@@ -12,6 +12,8 @@ public class TankManager : MonoBehaviour {
     public float TankSpeed;
     public float TankTurning;
     public float TankRe;
+
+    public GameObject seDeath;
     public GameObject bakuhatu;
     TankYatuManager TankYatu;
     GameObject obj;
@@ -87,6 +89,7 @@ public class TankManager : MonoBehaviour {
         {
             TankHP = 0;
             Instantiate(bakuhatu, obj.transform.position, transform.rotation);
+            Instantiate(seDeath, obj.transform.position, transform.rotation);
             Destroy(obj);
             TankYatu.Death();
             IsSurvival = false;

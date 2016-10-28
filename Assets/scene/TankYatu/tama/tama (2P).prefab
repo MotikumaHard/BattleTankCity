@@ -85,8 +85,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b89256fa888d08b48b36f336ca4bdf90, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: cf796eeb2c8e9654b9f55f9800b9961d, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -213,7 +213,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speeds: 15
   bakuha: {fileID: 1000012732676578, guid: caf8a75e2921d4c49b034c552dd57b74, type: 2}
-  audioClip: {fileID: 8300000, guid: 8be2e558363be064ea4198967eb30ede, type: 3}
+  seHit: {fileID: 1000012914038948, guid: 26bd83a85d0fe0b4082dbe29beb5f575, type: 2}
+  seInjection: {fileID: 1000012174411238, guid: 24d94c5a170754b4c934ba5e967b2ffb,
+    type: 2}
+  seBrock: {fileID: 1000011152595522, guid: 928146b85d22ba348990c9410ac47ef7, type: 2}
+  audioClip: {fileID: 8300000, guid: cf796eeb2c8e9654b9f55f9800b9961d, type: 3}
   attack: 0
 --- !u!212 &212000014003414016
 SpriteRenderer:

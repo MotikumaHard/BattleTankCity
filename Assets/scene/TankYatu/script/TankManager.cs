@@ -9,6 +9,7 @@ public class TankManager : MonoBehaviour {
     float angle = 0;
     public TankMaster TankData;
     public int TankHP;
+    public int TankAttack;
     public float TankSpeed;
     public float TankTurning;
     public float TankRe;
@@ -54,13 +55,18 @@ public class TankManager : MonoBehaviour {
             tanktable = new TankMasterTable();
             tanktable.Load();
 
-            IsSurvival = true;
+            CharaMasterTable charatable;
+            charatable = new CharaMasterTable();
+            charatable.Load();
 
+            IsSurvival = true;
+            CharaMaster CharaData = charatable.All[GameManager.Chara[playerNo]];
             TankData = tanktable.All[GameManager.Tank[playerNo]];
-            TankHP = TankData.Hp * 10;
-            TankTurning = TankData.Turning;
-            TankSpeed = TankData.Speed;
-            TankRe = TankData.Reload;
+            TankHP = (TankData.Hp + CharaData.Hp) * 10;
+            TankAttack = (TankData.Attack+CharaData.Attack);
+            TankTurning = (TankData.Turning + CharaData.Turning);
+            TankSpeed = (TankData.Speed + CharaData.Speed);
+            TankRe = (TankData.Reload + CharaData.Reload)/3 * 2;
 
             obj = (GameObject)Instantiate(Tank[GameManager.Tank[playerNo]], transform.position, Quaternion.identity);
             obj.transform.parent = this.transform;

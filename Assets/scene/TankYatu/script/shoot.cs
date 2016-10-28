@@ -19,7 +19,7 @@ public class shoot : MonoBehaviour {
         
         tank = gameObject.transform.parent.parent.gameObject.GetComponent<Tank>();
         manager = gameObject.transform.parent.parent.parent.gameObject.GetComponent<TankManager>();
-        attack = manager.TankData.Attack;
+        attack = manager.TankAttack;
         turning = (10.0f-manager.TankRe) / 7;
         utuwait = (3.5f - (manager.TankRe*0.5f));
     }

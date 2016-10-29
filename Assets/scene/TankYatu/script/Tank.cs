@@ -10,6 +10,7 @@ public class Tank : MonoBehaviour
     private float spd = 0;
     public GamePadManager pad;
     public bool A, B, X, Y, L, R = false;
+    public bool IsStop = true;
     TankManager pearent;
     TankYatuManager TankYatu;
 
@@ -62,6 +63,12 @@ public class Tank : MonoBehaviour
         Y = pad.pad[playerNo].Y;
         L = pad.pad[playerNo].LeftShoulder;
         R = pad.pad[playerNo].RightShoulder;
+
+        if(L || R || stickx > 0.1f || stickx < -0.1f || sticky > 0.1f || sticky < -0.1f)
+        {
+            IsStop = false;
+        }
+        else { IsStop = true; }
 
         //戦車の向きを変える
         transform.rotation = Quaternion.AngleAxis(angl, Vector3.back);

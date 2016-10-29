@@ -14,6 +14,12 @@ public class TankManager : MonoBehaviour {
     public float TankTurning;
     public float TankRe;
 
+    int magHP = 10;
+    int magAttack = 4;
+    float magSpeed = 0.1f;
+    float magTurning = 0.1f;
+    float magRe = 0.3f;
+
     public GameObject seDeath;
     public GameObject bakuhatu;
     TankYatuManager TankYatu;
@@ -62,11 +68,11 @@ public class TankManager : MonoBehaviour {
             IsSurvival = true;
             CharaMaster CharaData = charatable.All[GameManager.Chara[playerNo]];
             TankData = tanktable.All[GameManager.Tank[playerNo]];
-            TankHP = (TankData.Hp + CharaData.Hp) * 10;
-            TankAttack = (TankData.Attack+CharaData.Attack);
-            TankTurning = (TankData.Turning + CharaData.Turning);
-            TankSpeed = (TankData.Speed + CharaData.Speed);
-            TankRe = (TankData.Reload + CharaData.Reload)/3 * 2;
+            TankHP = (TankData.Hp*2 + CharaData.Hp) * magHP;
+            TankAttack = (TankData.Attack*2+CharaData.Attack) * magAttack;
+            TankTurning = (TankData.Turning*2 + CharaData.Turning) * magTurning;
+            TankSpeed = (TankData.Speed*2 + CharaData.Speed) * magSpeed;
+            TankRe = (TankData.Reload*2 + CharaData.Reload) * magRe;
 
             obj = (GameObject)Instantiate(Tank[GameManager.Tank[playerNo]], transform.position, Quaternion.identity);
             obj.transform.parent = this.transform;

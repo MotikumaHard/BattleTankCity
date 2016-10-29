@@ -44,6 +44,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back
+    uniqueID: 391240553
+    locked: 0
+  - name: Field
+    uniqueID: 2485402945
+    locked: 0
+  - name: Laser
+    uniqueID: 4006337583
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

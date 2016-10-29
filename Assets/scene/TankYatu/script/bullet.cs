@@ -32,7 +32,7 @@ public class bullet : MonoBehaviour {
     {
         if (c.tag == "Player1"|| c.tag == "Player2"|| c.tag == "Player3"|| c.tag == "Player4")
         {
-            c.gameObject.GetComponent<Tank>().DmageHp(attack*4);
+            c.gameObject.GetComponent<Tank>().DmageHp(attack);
             Instantiate(seHit, transform.position, transform.rotation);
         }
         else if(c.tag == "block")

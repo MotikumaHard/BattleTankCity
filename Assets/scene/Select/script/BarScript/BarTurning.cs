@@ -9,6 +9,7 @@ public class BarTurning : MonoBehaviour {
 	Slider slider;
 	float nownum = 0;
 	float innum = 0;
+    int max = 10;
     bool Ischara = false;
     // Use this for initialization
     void Start () {
@@ -28,7 +29,7 @@ public class BarTurning : MonoBehaviour {
         { innum = system.charatable.All[system.charanum].Turning; }
         else
         { innum = system.tanktable.All[system.tanknum].Turning; }
-        innum = innum/5;
+        innum = innum/max;
 
 		if(nownum != innum)
 		{

@@ -29,7 +29,7 @@ TagManager:
   - 4pbullet
   - block
   - wall
-  - 
+  - Item
   - 
   - 
   - 
@@ -55,4 +55,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: top
+    uniqueID: 2180259365
+    locked: 0
+  - name: point
+    uniqueID: 1889161575
     locked: 0

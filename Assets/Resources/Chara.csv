@@ -1,5 +1,23 @@
-﻿ID,Name,Hp,Attack,Speed,Turning,Reload
-Miho,西住みほ,5,5,5,5,5
-Maho,西住まほ,3,3,5,4,2
-Antyobi,アンチョビ,1,1,1,1,1
-Katyusya,カチューシャ,4,2,2,5,3
+ID,Name,Hp,Attack,Speed,Turning,Reload
+Miho,西住 みほ,5,5,5,5,5
+Takebe,武部 沙織,4,4,4,4,2
+Hana,五十鈴 華,4,2,3,3,4
+Mako,冷泉 麻子,3,3,5,5,2
+Akiyama,秋山 優花里,3,3,5,4,2
+Noriko,磯辺 典子,5,4,4,2,2
+Kaesaru,カエサル,2,4,3,3,5
+Elvin,エルヴィン,4,3,3,4,3
+Saemonza,左衛門佐,3,4,2,2,4
+Oryou,おりょう,2,3,5,5,3
+Darjeeling,ダージリン,5,5,4,4,4
+Rosehip,ローズヒップ,2,3,7,2,2
+Katyusha,カチューシャ,6,6,3,3,4
+Nonna,ノンナ,4,5,3,4,4
+Kurara,クラーラ,3,4,3,4,3
+Anchovy,アンチョビ,2,2,6,6,4
+Peparoni,ペパロニ,2,2,5,4,3
+Nisi,西　絹代,3,2,5,5,2
+Mika,ミカ,4,4,3,6,3
+Aki,アキ,3,5,2,2,5
+Miko,ミッコ,2,2,7,7,2
+Boko,ボコ,1,1,1,1,1

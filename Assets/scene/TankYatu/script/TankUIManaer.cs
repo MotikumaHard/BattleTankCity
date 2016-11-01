@@ -32,11 +32,12 @@ public class TankUIManaer : MonoBehaviour {
             Destroy(this.gameObject);
         }
 
-            TankMasterTable tanktable;
+        TankMasterTable tanktable;
         tanktable = new TankMasterTable();
         tanktable.Load();
         TankData = tanktable.All[GameManager.Tank[playerNo]];
         Tankname = TankData.Name;
+
     }
 	
 	// Update is called once per frame

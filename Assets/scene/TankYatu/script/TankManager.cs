@@ -9,10 +9,12 @@ public class TankManager : MonoBehaviour {
     float angle = 0;
     public TankMaster TankData;
     public int TankHP;
+    public int MaxHP;
     public int TankAttack;
     public float TankSpeed;
     public float TankTurning;
     public float TankRe;
+    public string CharaID;
 
     int magHP = 10;
     int magAttack = 4;
@@ -28,7 +30,7 @@ public class TankManager : MonoBehaviour {
     public bool IsPlay = false;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 
         TankYatu = GameObject.Find("TankYatu").GetComponent<TankYatuManager>();
 
@@ -69,10 +71,12 @@ public class TankManager : MonoBehaviour {
             CharaMaster CharaData = charatable.All[GameManager.Chara[playerNo]];
             TankData = tanktable.All[GameManager.Tank[playerNo]];
             TankHP = (TankData.Hp*2 + CharaData.Hp) * magHP;
+            MaxHP = TankHP;
             TankAttack = (TankData.Attack*2+CharaData.Attack) * magAttack;
             TankTurning = (TankData.Turning*2 + CharaData.Turning) * magTurning;
             TankSpeed = (TankData.Speed*2 + CharaData.Speed) * magSpeed;
             TankRe = (TankData.Reload*2 + CharaData.Reload) * magRe;
+            CharaID = CharaData.ID;
 
             obj = (GameObject)Instantiate(Tank[GameManager.Tank[playerNo]], transform.position, Quaternion.identity);
             obj.transform.parent = this.transform;
@@ -82,6 +86,7 @@ public class TankManager : MonoBehaviour {
             tankobj.angl = angle;
         }
     }
+    void Start() { }
 
     // Update is called once per frame
     void Update () {
@@ -106,6 +111,15 @@ public class TankManager : MonoBehaviour {
             TankYatu.Death();
             IsSurvival = false;
 
+        }
+    }
+
+    public void RecoveryHP(int heal)
+    {
+        TankHP = TankHP + heal;
+        if(TankHP > MaxHP)
+        {
+            TankHP = MaxHP;
         }
     }
 }

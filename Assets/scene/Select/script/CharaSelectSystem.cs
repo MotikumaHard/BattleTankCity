@@ -11,8 +11,8 @@ public class CharaSelectSystem : MonoBehaviour {
 	public int tanknum = 0;
     public int charanum = 0;
 	//最大選択戦車数
-	public int MaxTanknum = 4;
-    public int MaxCharanum = 4;
+	int MaxTanknum = 6;
+    int MaxCharanum = 22;
 	bool slant = false;
 	public string tankname = "";
 	public TankMasterTable tanktable;

@@ -9,6 +9,7 @@ public class TankManager : MonoBehaviour {
     float angle = 0;
     public TankMaster TankData;
     public int TankHP;
+    public int MaxHP;
     public int TankAttack;
     public float TankSpeed;
     public float TankTurning;
@@ -70,6 +71,7 @@ public class TankManager : MonoBehaviour {
             CharaMaster CharaData = charatable.All[GameManager.Chara[playerNo]];
             TankData = tanktable.All[GameManager.Tank[playerNo]];
             TankHP = (TankData.Hp*2 + CharaData.Hp) * magHP;
+            MaxHP = TankHP;
             TankAttack = (TankData.Attack*2+CharaData.Attack) * magAttack;
             TankTurning = (TankData.Turning*2 + CharaData.Turning) * magTurning;
             TankSpeed = (TankData.Speed*2 + CharaData.Speed) * magSpeed;
@@ -109,6 +111,15 @@ public class TankManager : MonoBehaviour {
             TankYatu.Death();
             IsSurvival = false;
 
+        }
+    }
+
+    public void RecoveryHP(int heal)
+    {
+        TankHP = TankHP + heal;
+        if(TankHP > MaxHP)
+        {
+            TankHP = MaxHP;
         }
     }
 }

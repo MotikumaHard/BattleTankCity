@@ -64,13 +64,7 @@ public class shoot : MonoBehaviour {
     }
     IEnumerator sleep()
     {
-
-        Debug.Log("開始");
-
         yield return new WaitForSeconds(utuwait); 
         utu = true;
-        Debug.Log("撃てます");
-
-
     }
 }

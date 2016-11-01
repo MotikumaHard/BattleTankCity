@@ -89,4 +89,9 @@ public class Tank : MonoBehaviour
     {
         pearent.DecreaseHP(attack);
     }
+
+    public void Hiropon(int pon)
+    {
+        pearent.RecoveryHP(pon);
+    }
 }
